@@ -1,0 +1,2 @@
+[15-Sep-2023 07:55:18 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Api\GeneralApiController::getSongs() in /home/picklmsc/uesi.picklms.com/app/Http/Controllers/Api/GeneralApiController.php on line 616
+[02-Oct-2023 13:25:48 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Api\ApiAuthController::registerDonatedUserDetails() in /home/picklmsc/uesi.picklms.com/app/Http/Controllers/Api/ApiAuthController.php on line 450
