@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Otrixweb E-commerce Laravel Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+		media="screen, projection">
+	<style type="text/css" media="screen">
+		p,
+		table,
+		hr,
+		.box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Otrixweb E-commerce Laravel Admin Panel&rdquo; Documentation by Otrixweb
+			&ldquo;&rdquo;
+			v1.5</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Otrixweb E-commerce Laravel Admin&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+						Created: 11/07/2023<br>
+						By: Otrixweb<br>
+						Email: <a href="mailto:otrixapp@gmail.com">otrixapp@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are
+					beyond the scope of this help file, please feel free to email via my user page contact form <a
+						href="http://themeforest.net/user/otrixwebandapp">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#overView">Overview</a></li>
+			<li><a href="#requirments">System Requirements</a></li>
+			<li><a href="#gettingStart">Installation</a></li>
+			<li><a href="#runProject">Run Your Project</a></li>
+			<li><a href="#projectStructre">Permission</a></li>
+			<li><a href="#customisation">API</a></li>
+			<li><a href="#aiSection">AI Section</a></li>
+
+		</ol>
+
+		<hr>
+
+		<h3 id="overView"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+		<span>This project is a E-commerce Laravel Admin panel and API.We have build this admin panel for who want to
+			create laravel E-commerce admin panel and Rest API for application. </span>
+		</br>
+		</br>
+		<span class="secondPara">Some of the main Technologies used are</span>
+		</br>
+		</br>
+
+		<ol class="expanded">
+			<li>PHP</li>
+			<li>Laravel 8.x</li>
+			<li>Bootstrap 4.x</li>
+		</ol>
+
+		<hr>
+
+
+		<hr>
+
+		<h3 id="requirments"><strong>B) System Requirements</strong> - <a href="#toc">top</a></h3>
+		<span>To installing Otrix Commerce Laravel Admin, Your web server must be running PHP 7.2 or higher and Mysql
+			5.7 or higher. We have tested
+			it with Windows, Mac and Linux but for optimum performance we will recommend to use Linux with Apache
+			webserver. Below
+			are a list of items you should ensure your host can comply with. </span>
+		</br>
+		</br>
+
+		<ul>
+			<li>PHP 7.3+</li>
+			<li>MYSQL 5.7+</li>
+			<li>Composer 2.x+</li>
+			<li>MBString Extension</li>
+			<li>MYSQLi Extension</li>
+			<li>CURL Extension (recommended)</li>
+		</ul>
+		<p>* In most hosting accounts, these extensions are enabled by default. But you should check with your hosting
+			provider.</p>
+		<hr>
+
+
+
+		<h3 id="javascript"><strong>C) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<iframe height="480" width="500" src="https://www.youtube.com/embed/7wka7ec7abE">
+		</iframe>
+		</br>
+		</br>
+		</br>
+
+		<ol class="styledlist listCustom" type="A">
+			<li>Create Database:Create new database on your web server and import otrixcommerce_db.sql file under the
+				<b>Otricommerce Database</b> folder as shown below
+			</li>
+			</br>
+			</br>
+			<img height="100%" width="100%" src="assets/images/install_1.png" alt="HTML Structure" />
+			<img height="100%" width="100%" src="assets/images/install_2.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<li>Now upload otrixcommerce laravel zip file on your webserver using FTP/Cpanel.
+				Laravel zip file location: <b>otrixcommercelaravel > Code > laraveladmincode</b>
+			</li>
+			</br>
+			<li>
+				Now open command promte and navigate to your project folder (we recommend to use Putty)
+
+			</li>
+			<img height="100%" width="100%" src="assets/images/install_3.png" alt="HTML Structure" />
+			<li>Then run below command</li>
+			<code class="codeBlockBg">
+															  composer install
+															</code>
+			</br>
+			<li>And run this command after composer install</li>
+			<code>php artisan key:generate</code>
+			</br>
+			<li>After Successfully installtion laravel open your .env file and set your database confgration.</li>
+			</br>
+			<img height="100%" width="80%" src="assets/images/install_4.png" alt="HTML Structure" />
+			</br>
+			<p><b>Congratulations!</b> your laravel application Successfully installted and ready to use
+			</p>
+		</ol>
+
+
+		<hr>
+
+		<h3 id="psdFiles"><strong>D) Run Your Project</strong> - <a href="#toc">top</a></h3>
+
+		<p><b>Open Admin Panel</b></p>
+		<p>Open your webbrowser and enter your domain: https://yourdomain.com/admin</p>
+		</br>
+		<img height=" 100%" width="60%" src="assets/images/install_5.png" alt="HTML Structure" />
+		<p>Super admin email and password as below</p>
+		<p>Email: <b>superadmin@mail.com</b></p>
+		<p>Password: <b>123456</b></p>
+		<p>After successful login you will reach to Admin Dashboard.
+		</p>
+		<img height=" 100%" width="80%" src="assets/images/install_6.png" alt="HTML Structure" />
+		</br></br>
+		<h4>Admin Panel consist 21 modules listed below -</h4>
+
+		<ol>
+			<li><strong>Catalog > Categories</strong> - For all Categories and sub-categories </li>
+			<li><b>Products</b> - Product Management module create/update/delete product</li>
+			<li><b>Coupon</b> - Create Coupon for customer with percentage/fixed amount</li>
+			<li><b>Option</b> - Create option here like size.color etc </li>
+			<li><b>Manufactureres</b> - Add your product mnufactureres like zara,dell,apple,nike etc</li>
+			<li><b>Attribute Group</b> - Here is all type attribute group like your product specification General,
+				Display Feature etc
+			</li>
+			<li><b>Review</b> - You can view customer submitted review here </li>
+			<li><b>Shipping</b> - Add your shipping method and shipping charges here </li>
+			<li><b>Length Class</b> - Crud length class here like your product has length </li>
+			<li><b>Weight Class</b> - Crud Weight class here like your product has Weight </li>
+			<li><b>Order Status</b> - Crud order status like pending,completed etc </li>
+			<li><b>Stock Status</b> - Crud stock status like out of stock,in stock etc </li>
+			<li><b>Countries</b> - Crud Country </li>
+			<li><b>Tax Rate</b> - Add your tax rates</li>
+			<li><b>Customer </b> - Manage your customer like delete,add new etc</li>
+			<li><b>Sales > Order </b> - Manage your order like add order history and change order status</li>
+			<li><b>User </b> - Manage user for your admin panel use like Editor,sales etc</li>
+			<li><b>CMS > Manage Cms </b> - Create pages like terms ,privacy,or any informative </li>
+			<li><b>CMS > Deals of the day </b> - Add remove product to your DOD Section </li>
+			<li><b>Role&Permission </b> - Manage Role and Permission like create Editor role and assign some specific
+				Permission to him </li>
+			<li><b>Design </b> - Change Application banner images from here </li>
+		</ol>
+
+		<hr>
+
+		<h3 id="projectStructre"><strong>E) Add New Permission </strong> - <a href="#toc">top</a></h3>
+		<p>To add new Permission is easy task just follow steps below</p>
+		<p>first create permission from https://yourdomain.com/admin/permission/add </p>
+		<img height=" 100%" width="80%" src="assets/images/install_7.png" alt="HTML Structure" />
+		</br>
+		<p>After that create new array in config > permission_name.php like below </p>
+		<img height=" 100%" width="80%" src="assets/images/install_8.png" alt="HTML Structure" />
+		</br>
+		<p>Run below command</p>
+		<code>php artisan cache:forget spatie.permission.cache</code>
+		<code>php artisan cache:clear</code>
+		<code>php artisan config:clear</code>
+		<p>Now you can set permission for this example module.</p>
+		</br>
+		<img height=" 100%" width="100%" src="assets/images/install_9.png" alt="HTML Structure" />
+		<p>Simply assign this module permission for specific role and save role</p>
+		<hr>
+
+
+
+
+		<h3 id="customisation"><strong>F) REST API</strong> - <a href="#toc">top</a></h3>
+		<p class="secondPara">A.Import postman collection from Postman API Collection Folder</p>
+		<img height=" 100%" width="80%" src="assets/images/install_10.png" alt="HTML Structure" />
+		<img height=" 100%" width="80%" src="assets/images/install_11.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p class="secondPara">B.Setting up environment variable in postman</p>
+		<img height=" 100%" width="100%" src="assets/images/install_12.png" alt="HTML Structure" />
+		<img height=" 100%" width="100%" src="assets/images/install_13.png" alt="HTML Structure" />
+		</br>
+		<p>Access Token Same as your .env file access token</p>
+		<img height=" 100%" width="100%" src="assets/images/install_14.png" alt="HTML Structure" />
+		</br>
+		<p> BaseURL : https://yourdomain.com </p>
+		</br>
+		<p class="secondPara">All Api routes are defined in routes>api.php</p>
+		<p class="secondPara">All Api controller are defined in app>http>Controllers>Api</p>
+
+		</br>
+		<hr>
+
+		<h3 id="aiSection"><strong>G) AI Section</strong> - <a href="#toc">top</a></h3>
+		<p class="secondPara">A.Open ChatGPT</p>
+		<img height=" 100%" width="80%" src="assets/images/ai1.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p class="secondPara">B.Then enable it and enter your ChatGPT API Key and press update</p>
+		<img height=" 100%" width="100%" src="assets/images/ai2.png" alt="HTML Structure" />
+		</br>
+		<p class="secondPara">C.Goto product add and write product name after that click on "get content from ChatGPT"
+			after that automatically filled up</p>
+		<img height=" 100%" width="100%" src="assets/images/ai3.png" alt="HTML Structure" />
+		</br>
+		<img height=" 100%" width="100%" src="assets/images/ai4.png" alt="HTML Structure" />
+		</br>
+		<hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to
+			help
+			you
+			if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If
+			you
+			have
+			a more general question relating to the themes on ThemeForest, you might consider visiting the
+			forums
+			and
+			asking your question in the "Item Discussion" section.</p>
+
+		<p class="append-bottom alt large"><strong>Otrixweb</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+
+</html>

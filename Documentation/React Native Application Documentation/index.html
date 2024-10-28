@@ -1,0 +1,514 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Otrixweb E-commerce Application Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+		media="screen, projection">
+	<style type="text/css" media="screen">
+		p,
+		table,
+		hr,
+		.box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Otrixweb E-commerce React Native Application&rdquo; Documentation by Otrixweb
+			&ldquo;&rdquo;
+			v1.5</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Otrixweb E-commerce React Native Application&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+						Created: 11/07/2023<br>
+						By: Otrixweb<br>
+						Email: <a href="mailto:otrixapp@gmail.com">otrixapp@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are
+					beyond the scope of this help file, please feel free to email via my user page contact form <a
+						href="http://themeforest.net/user/otrixwebandapp">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#overView">Overview</a></li>
+			<li><a href="#environmentSetup">Environment Setup</a></li>
+			<li><a href="#gettingStart">Getting Started</a></li>
+			<li><a href="#settingenvironment">Environment Variables</a></li>
+			<li><a href="#sociallogin">Social Login Setup</a></li>
+			<li><a href="#pushnotification">Push Notification</a></li>
+			<li><a href="#runProject">Run Your Project</a></li>
+			<li><a href="#projectStructre">Project Structure</a></li>
+			<li><a href="#customisation">Customisation</a></li>
+
+
+
+		</ol>
+
+		<hr>
+
+		<h3 id="overView"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+		<span>This project is a E-commerce React Native Application with laravel framwork.We have build this app for who
+			want to create react
+			native e-commerce application with full E-commerce functionality</span>
+		</br>
+
+		<span class="secondPara">Some of the main Technologies used are</span>
+		</br>
+		</br>
+
+		<ol class="expanded">
+			<li>React Native</li>
+			<li>Native Base</li>
+			<li>Radux + Saga</li>
+			<li>React Navigation 6+</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="environmentSetup"><strong>B) Environment Setup</strong> - <a href="#toc">top</a></h3>
+		<p style="color: #75a734; text-decoration: none;">Note: You can also follow react native offical
+			quick start
+			documentation for your environment setup.
+			<a target="_blank" href="https://reactnative.dev/docs/environment-setup" class="blink">Check it
+				Now.</a>
+		</p>
+		<p class="secondPara" style="margin-bottom:0px">Running of a React Native App is very easy
+			and simple.These are the following steps for machine setup for an React Native App.</p>
+		<p class="remine" style="color: rgb(192, 142, 15);">If your Machine environment is already setup for running an
+			React Native then you can
+			skip
+			the steps.</p>
+		<ol class="expanded"">
+										<li>Mac</li>
+										<li>Windows</li>
+									</ol>
+									<p class=" secondPara heading">1. Mac</p>
+
+			<ol type="A" class="alpha">
+				<li>Install Node js</li>
+				<li>Install Watchman</li>
+				<li>Xcode</li>
+				<li>Command Line Tools</li>
+				<li>CocoaPods</li>
+			</ol>
+
+			<p class=" secondPara">A. Install Node js </p>
+			<code>
+										brew install node
+									</code>
+			<p class=" secondPara">B. Install Watchman </p>
+			<code>
+										brew install watchman
+									</code>
+			<p>Watchman is a tool by Facebook for watching changes in the filesystem. It is highly recommended
+				you install it for
+				better performance.</p>
+			<p class=" secondPara">C. Xcode </p>
+			<p>The easiest way to install Xcode is via the Mac App Store. Installing Xcode will also install
+				the iOS Simulator and all the necessary tools to build your iOS app.</p>
+
+			<a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12" class="button" target="_blank">Download
+				Xcode from here</a>
+			<p class=" secondPara">D. Setting up Command Line Tools (Xcode>Preferences>Command Line Tool)</p>
+			<img height="100%" width="70%" src="assets/images/command.png" alt="HTML Structure" />
+			<p class=" secondPara">E. Install CocoaPods</p>
+			<code>
+										sudo gem install cocoapods
+									</code>
+
+
+			<p class=" secondPara heading">2. Windows</p>
+			<ol class="expanded" type="A">
+				<li>Download NodeJS</li>
+				<li>Install Android Studio</li>
+				<li>JDK</li>
+			</ol>
+
+			<p class="secondPara">A. Download NodeJs</p>
+			<img height="100%" width="25%" src="assets/images/nodejs_logo.png" alt="HTML Structure" />
+
+			<ol class="styledlist listCustom" type="I">
+				<li>
+					<ul> Download instructions
+						<!-- <li>Mac users: For OS X, download the .pkg file form below link.<b>(v.16.13.0
+												recommended)</b></li> -->
+						<li>Windows users: Download either the MSI or the .exe form below link,
+							whichever you
+							prefer
+							.<b>(v.16.13.0 recommended)</b></li>
+					</ul>
+					<a href="https://nodejs.org/dist/v16.13.0/" class="button" target="_blank">Download
+						Node
+						v.16.13.0 from here</a>
+				</li>
+				</br>
+
+				<li>After Installing NodeJs you'll most likely need to restart your computer.</li>
+				<p style="color:#757575;font-size:18px;">To ensure that npm is configured correctly, you
+					can
+					type:
+				</p>
+				<code class="codeBlockBg">
+											npm --version
+									</code>
+				</li>
+			</ol>
+
+			<p class="secondPara " id="Configure">B. Install Android Studio</p>
+			<img height="100%" width="30%" src="assets/images/androidstudio.png" alt="HTML Structure" />
+			</br>
+			<a href="https://developer.android.com/studio" class="button" target="_blank">Download
+				Android
+				Studio
+				from here</a>
+			</br>
+			</br>
+
+			<ul> For Windows User Configure the ANDROID_HOME environment variable
+				<li>Open the Windows Control Panel.</li>
+				<li>Click on User Accounts, then click User Accounts again.</li>
+				<li>Click on Change my environment variables</li>
+				<li>Click on New... to create a new <code>ANDROID_HOME</code> user variable that points
+					to the
+					path
+					to your Android SDK:</li>
+				<img height="100%" width="80%" src="assets/images/windowenviorment.png" alt="HTML Structure" />
+			</ul>
+			</br>
+
+			<p class="secondPara ">C. JDK</p>
+
+			<a href="https://openjdk.java.net/projects/jdk8/" class="button" target="_blank">Download
+				JDK and install
+				from here</a>
+			</br>
+			</br>
+
+
+			<hr>
+
+			<h3 id="gettingStart"><strong>C) Getting Started</strong> - <a href="#toc">top</a></h3>
+
+			<p> <b>iOS Setup Video</b></p>
+			<iframe height="480" width="500" src="https://www.youtube.com/embed/3mghLy6xWiw">
+			</iframe>
+			</br>
+			</br>
+			<p> <b>Android Setup Video</b></p>
+			<iframe height="480" width="500" src="https://www.youtube.com/embed/u9CBo9CSCuo">
+			</iframe>
+			<br>
+			<ol class="styledlist listCustom" type="A">
+				<li>First Extract the projects as shown in picture.</li>
+				</br>
+				<img height="100%" width="60%" src="assets/images/ios1.png" alt="HTML Structure" />
+				</br>
+				<li> Open the Terminal, Then go to the project folder
+				</li>
+				</br>
+				<img height="100%" width="60%" src="assets/images/ios3.png" alt="HTML Structure" />
+				<li>Then run below command</li>
+				</br>
+				<img height="100%" width="60%" src="assets/images/ios4.png" alt="HTML Structure" />
+				</br>
+				<code class="codeBlockBg">
+											  npm install
+											</code>
+				</br>
+
+			</ol>
+
+
+			<hr>
+
+			<hr>
+
+			<h3 id="settingenvironment"><strong>D) Environment Variables</strong> - <a href="#toc">top</a></h3>
+
+			<ol class="styledlist listCustom" type="A">
+				<li>Open .env file in root folder</li>
+				</br>
+				<img height="100%" width="60%" src="assets/images/env_1.png" alt="HTML Structure" />
+				</br>
+				<li> Change environment variables
+				</li>
+				</br>
+				<img height="60%" width="100%" src="assets/images/env_2.png" alt="HTML Structure" />
+				<li>Then run below command</li>
+				</br>
+				</br>
+				<code class="codeBlockBg">
+						npm start -- --reset-cache
+				</code>
+				</br>
+
+			</ol>
+
+
+			<hr>
+
+			<hr>
+
+			<h3 id="sociallogin"><strong>E) Social Login Setup</strong> - <a href="#toc">top</a></h3>
+
+			<ol class="styledlist listCustom" type="A">
+				<h4>Google Login</h4>
+				<p><b><u> Step 1</u></b> First go to <a href="https://console.firebase.google.com/u/0/">Firebase
+						Console</a>, click on
+					project setting.
+					project folder as shown in picture.</p><br>
+				<img height="500%" width="60%" src="assets/images/fs1.png" alt="HTML Structure" /><br>
+
+				<br><br>
+				<p><b><u> Step 2 (a)</u></b> Download google-service.json for android and put it on android > app
+					folder.
+
+				</p><br>
+				<img height="500%" width="80%" src="assets/images/fs6.png" alt="HTML Structure" /><br>
+
+				<br><br>
+				<p><b><u> Step 2 (b)</u></b> Download googleService-info.plist and import from xcode.
+				</p><br>
+				<img height="500%" width="80%" src="assets/images/fs7.png" alt="HTML Structure" /><br>
+
+				<br><br>
+
+				<p><b><u>Step 3</u></b> Your Login.js file will be look like the picture. change webClientId as per
+					your google-service.json and for ios goolde.service.plist it's same for both platform. </p><br>
+				<img height="100%" width="80%" src="assets/images/appConfig.png" alt="HTML Structure" /><br><br>
+				</br></br>
+				<h4><b>Facebook Login</b> </h4>
+				<p><b><u> Step 1</u></b> First go to <a href="https://developers.facebook.com/apps/"
+						target="_blank">Facebook
+						Developer</a>, click on
+					your app
+					shown in picture.</p><br>
+				<img height="500%" width="60%" src="assets/images/fs3.png" alt="HTML Structure" /><br>
+				<p><b><u> Step 2</u></b> copy your APP ID
+					shown in picture.</p><br>
+				<img height="500%" width="60%" src="assets/images/fs4.png" alt="HTML Structure" /><br>
+				<p><b><u> Step 3</u></b>Past it in
+					shown in picture.</p><br>
+				<img height="500%" width="60%" src="assets/images/fs5.png" alt="HTML Structure" /><br>
+				<p><b>Fpr ios past in info.plist</b></p><br>
+				<a href="https://www.npmjs.com/package/react-native-fbsdk#installation" target="_blank">For More About
+					Facebook
+					Integration Click Here</a>
+			</ol>
+
+
+			<hr>
+
+
+			<h3 id="pushnotification"><strong>F) Firebase Push Notification</strong> - <a href="#toc">top</a></h3>
+			<ol class="expanded"">
+													<li>Android</li>
+													<li>iOS</li>
+													<li>React Native Code</li>
+												</ol>
+												<p>For Android goto the firebase console and follow below step:</p>
+							<h5>1) Android</h5>
+							<p>From the left sidebar, select the gear icon next to Project Overview and then select Project Settings:</p>
+							<img height=" 100%" width="80%" src="assets/images/push1.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p>Scroll down to Your apps section and select the Android button:</p>
+			<img height=" 100%" width="80%" src="assets/images/push2.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p> On the Register App section, enter the package name of your Android app.</p>
+			<p>App nickname field is a given name for your app on Firebase console.</p>
+			<img height=" 100%" width="80%" src="assets/images/push3.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p>Download config file will give you a Firebase configuration file. Drag the file on top of app folder
+				under the android.</p>
+			<img height=" 100%" width="80%" src="assets/images/push4.png" alt="HTML Structure" />
+			</br>
+			<h5>2) iOS</h5>
+			<p>From the left sidebar, select the gear icon next to Project Overview and then select Project Settings:
+			</p>
+			<img height=" 100%" width="80%" src="assets/images/push1.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p>Scroll down to Your apps section and select the iOS button:</p>
+			<img height=" 100%" width="80%" src="assets/images/push2.png" alt="HTML Structure" />
+			</br>
+			</br>
+
+			<p> On the Register App section, enter the bundle ID of your iOS app.</p>
+			<img height=" 100%" width="80%" src="assets/images/push6.jpg" alt="HTML Structure" />
+			</br>
+			</br>
+			<p>Download config file will give you a Firebase configuration file.</p>
+			<img height=" 100%" width="80%" src="assets/images/push5.jpg" alt="HTML Structure" />
+			</br>
+			</br>
+			<p> Open your iOS project in xcode and add the “Google Service-Info.list” file into your root
+				folder(PROJECTNAME/ios) of your project from xcode by right-clicking on the project as shown below,</p>
+			<img height=" 100%" width="80%" src="assets/images/push7.jpg" alt="HTML Structure" />
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push8.jpg" alt="HTML Structure" />
+			</br>
+			</br>
+			<p>Create an APN certificate on Apple developer account and mapping it on Firebase project</p>
+			<p>In this section you need to follow the steps in the link <a
+					href="https://rnfirebase.io/messaging/usage/ios-setup"
+					target="_blank">https://rnfirebase.io/messaging/usage/ios-setup</a> to generate the APN key on the
+				Apple developer account and then link the .p8 certificate to the firebase iOS project we have created in
+				the above section. Make sure the below points have been achieved before proceeding further to the next
+				section.</p>
+			<p>Adding the capabilities “Background Modes” & “Push Notifications” for the project in xcode.</p>
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push9.jpg" alt="HTML Structure" />
+			</br>
+			<p> while adding the capabilities, make sure you select “All” as shown below.</p>
+			</br>
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push10.jpg" alt="HTML Structure" />
+			</br>
+			<p> Register a key in the Apple developer account with “Apple Push Notification Service (APNs)” enabled.</p>
+			<p>Upload the above key file(.p8) in the firebase iOS project under APN authentication key section in
+				firebase.</p>
+			<p>Under the identifier, enabling the push notification service.</p>
+			<p>If you already have the distribution certificate and developer certificate, you don’t have to worry about
+				provisioning the certificate. Below is what you should cross verify in the xcode</p>
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push11.jpg" alt="HTML Structure" />
+			</br>
+			<h5>3) React Native Code</h5>
+			<p>Change firebase initialize value as per your setup on HomeScreen.js</p>
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push12.png" alt="HTML Structure" />
+			</br>
+			<p>Finally add firebase server key to the laravel env file</p>
+			</br>
+			<img height=" 100%" width="80%" src="assets/images/push13.png" alt="HTML Structure" />
+			<p>Add above server key to laravel env file like this</p>
+			<code>FIREBASE_SERVER_KEY=YOUR_SERVER_KEY
+</code>
+			</br>
+
+
+			<hr>
+			<h3 id="runProject"><strong>G) Run Your Project</strong> - <a href="#toc">top</a></h3>
+
+			<ol class="expanded"">
+													<li>Android</li>
+													<li>iOS</li>
+												</ol>
+
+			<p>Run below command for windows</p>
+			<p>1) Android</p>
+			<img height=" 100%" width="60%" src="assets/images/android_run.png" alt="HTML Structure" />
+			</br>
+			<code class=" codeBlockBg">
+								npx react-native run-android
+								</code>
+
+			<p>2) iOS</p>
+			<p>A. First install cocoapods goto the ios folder </p>
+			<img height=" 100%" width="70%" src="assets/images/ios5.png" alt="HTML Structure" />
+			</br>
+			<code class="codeBlockBg">
+									cd otrixcommerceapp/ios
+									</code>
+			<p>B. then run below command</p>
+			<img height=" 100%" width="80%" src="assets/images/ios6.png" alt="HTML Structure" />
+			</br>
+			<code class="codeBlockBg">
+																	pod install
+																		</code>
+			<p>C. open otrixcommerce.xcworkspace and run project using <b>Xcode</b> or run below command in root
+				folder</p>
+			<img height=" 100%" width="80%" src="assets/images/ios7.png" alt="HTML Structure" />
+			<code class="codeBlockBg">
+						npx react-native run-ios
+					</code>
+			<p>After runing above command your project runing in emulator (if windows) / Simulator (if mac)</p>
+			<img height=" 100%" width="40%" src="assets/images/emulator.png" alt="HTML Structure" />
+			<hr>
+			<h3 id="projectStructre"><strong>H) Project Structure</strong> - <a href="#toc">top</a></h3>
+			<p class="secondPara">Project Structure overview</p>
+			<p><b>assets :</b> This folder includes images and fonts.</p>
+			<p><b>common :</b> Common folder includes globally used function and configs</p>
+			<p><b>components :</b> Components folder includes reusable components and local database (In items
+				folder)</p>
+			<p><b>helper :</b> this folder includes globally used colors,styles,fonts etc</p>
+			<p><b>lang:</b> Language folder </p>
+			<p><b>redux:</b> includes Api setup,redux,actions,saga and reducer</p>
+			<p><b>screens:</b> Screems includes whole app screens </p>
+			<p><b>Skeleton:</b> includes placehoders </p>
+			<p><b>AppNavigations:</b> includes whole application routes </p>
+			<img height=" 100%" width="100%" src="assets/images/project_structure.png" alt="HTML Structure" />
+			<hr>
+			<h3 id="customisation"><strong>I) Customisation</strong> - <a href="#toc">top</a></h3>
+			<p class="secondPara">A.Change whole app colors from Colors.js</p>
+			<img height=" 100%" width="80%" src="assets/images/ios8.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p class="secondPara">B.Change whole app common styles from GlobalStyles.js</p>
+			<img height=" 100%" width="100%" src="assets/images/ios9.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<p class="secondPara">C.Change whole app Fonts from Fonts.js</p>
+			<img height=" 100%" width="100%" src="assets/images/ios10.png" alt="HTML Structure" />
+			</br>
+			</br>
+			</br>
+			<p class="secondPara">D.Add/Update Screen from screens folder </p>
+			<img height=" 100%" width="100%" src="assets/images/ios11.png" alt="HTML Structure" />
+			</br>
+			</br>
+			<hr>
+
+
+
+
+
+			<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to
+				help
+				you
+				if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If
+				you
+				have
+				a more general question relating to the themes on ThemeForest, you might consider visiting the
+				forums
+				and
+				asking your question in the "Item Discussion" section.</p>
+
+			<p class="append-bottom alt large"><strong>Otrixweb</strong></p>
+			<p><a href="#toc">Go To Table of Contents</a></p>
+
+			<hr class="space">
+	</div><!-- end div .container -->
+</body>
+
+</html>

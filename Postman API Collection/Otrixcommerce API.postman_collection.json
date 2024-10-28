@@ -1,0 +1,1990 @@
+{
+	"info": {
+		"_postman_id": "e5f2d9c9-60f5-43b9-ad02-d4e6bc50bfeb",
+		"name": "Otrixcommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11195957"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "creation",
+									"value": "D",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "otrixapp@gmail.in",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Using Mobile",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobileNumber",
+									"value": "9825626679",
+									"type": "text"
+								},
+								{
+									"key": "creation",
+									"value": "D",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "peter.return@mail.com\t",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/loginUsingMobile",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"loginUsingMobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "youremail@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "creation",
+									"value": "D",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/forgotPassword",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "otp",
+									"value": "2001",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "abdullah.return@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/verifyOTP",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"verifyOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "Abdullah",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "patel",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "otrixapp@gmail.in",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "9898989898",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "is_flutter",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/register",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "current_password",
+									"value": "123123",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "new_password",
+									"value": "1234",
+									"type": "default"
+								},
+								{
+									"key": "otpToken",
+									"value": "t6REqJciMx4LuznK6BRMNTUwTTTrjc",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "youremail@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/resetPassword",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/user/logout",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "get Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorizationn",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L290cml4Y29tbWVyY2VsYXJhdmVsYXBwL2FwaS91c2VyL2xvZ2luIiwiaWF0IjoxNjgzNTQ0MzI2LCJleHAiOjE2ODM1NDQzODYsIm5iZiI6MTY4MzU0NDMyNiwianRpIjoiM3VtT3F5a2oxM0lYd01MdiIsInN1YiI6IjEiLCJwcnYiOiIxZDBhMDIwYWNmNWM0YjZjNDk3OTg5ZGYxYWJmMGZiZDRlOGM4ZDYzIn0.HCqqY7ybhW5sOvfljZfwfNdjMu64Y3jnx9axRWjkXaQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/user/getCustomer",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  1eH1RtTZNAq2blEQ0NTtPDnYz8pT9y3o4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/user/getAdress",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getAdress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile Picture",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/changeProfilePicture",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"changeProfilePicture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "current_password",
+									"value": "123123",
+									"type": "default"
+								},
+								{
+									"key": "new_password",
+									"value": "1234",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/changePassword",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Adresss",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abdullah",
+									"type": "string"
+								},
+								{
+									"key": "country_id",
+									"value": "1",
+									"type": "string"
+								},
+								{
+									"key": "city",
+									"value": "DH",
+									"type": "string"
+								},
+								{
+									"key": "postcode",
+									"value": "380001",
+									"type": "string"
+								},
+								{
+									"key": "address_1",
+									"value": "Test It",
+									"type": "string"
+								},
+								{
+									"key": "address_2",
+									"value": "Street right adderess",
+									"type": "string"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/addAddress",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"addAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "APOOO",
+									"type": "string"
+								},
+								{
+									"key": "address_1",
+									"value": "Update",
+									"type": "string"
+								},
+								{
+									"key": "address_2",
+									"value": "Update",
+									"type": "string"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "city",
+									"value": "DAA",
+									"type": "string"
+								},
+								{
+									"key": "country_id",
+									"value": "1",
+									"type": "string"
+								},
+								{
+									"key": "postcode",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/editAddress/8",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"editAddress",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/user/deleteAddress/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"deleteAddress",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Update Wishlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "54",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/addUpdateWishlist",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"addUpdateWishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "App Update",
+									"type": "default"
+								},
+								{
+									"key": "lastname",
+									"value": "New",
+									"type": "default"
+								},
+								{
+									"key": "telephone",
+									"value": "9829829829",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/updateProfile",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"updateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Wishlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/user/getWishlist",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getWishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "54",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/addReview",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"addReview"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Add To Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "options",
+									"value": "{\"optionColorSelected\":\"\",\"optionSizeSelected\":\"\",\"optionSelectSelected\":\"\"}",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "S",
+									"type": "text"
+								},
+								{
+									"key": "productTotalPrice",
+									"value": "45",
+									"type": "text"
+								},
+								{
+									"key": "upload_logo[]",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/1_LOrBWkXGjCjydZxSirsSCA.webp"
+								},
+								{
+									"key": "upload_logo[]",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/1_iAt1Vn_SthnT3f9VJDHBlA.gif"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/addToCart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"addToCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/cancelOrder",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"cancelOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/getCart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order timeline",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/getOrderTimeline/54",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getOrderTimeline",
+								"54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Quantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cart_id",
+									"value": "51",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/updateCart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"updateCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Coupon",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "couponCode",
+									"value": "otrixweb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/applyCoupon",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"applyCoupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cart_id",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/deleteCart",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"deleteCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Checkout Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/user/getCheckoutData",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getCheckoutData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select Shipping",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/user/selectShipping/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"selectShipping",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "payment_method",
+									"value": "cod",
+									"type": "string"
+								},
+								{
+									"key": "transaction_id",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "address_id",
+									"value": "1",
+									"type": "string"
+								},
+								{
+									"key": "payment_method",
+									"value": "CASH ON DELIVERY",
+									"type": "string"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/placeOrder",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Authorization}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/user/getOrdersList",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getOrdersList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "Home Page",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getHomePage?reactnativeapp=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getHomePage"
+							],
+							"query": [
+								{
+									"key": "reactnativeapp",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Home Page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/api/testAPI",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"api",
+										"testAPI"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 13 Apr 2022 05:09:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.51 (Win64) PHP/8.1.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Home Page initial",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getHomePageInit?language=en&deviceType=1&device_id=12a5saq",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getHomePageInit"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "en"
+								},
+								{
+									"key": "deviceType",
+									"value": "1"
+								},
+								{
+									"key": "device_id",
+									"value": "12a5saq"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Home Page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/api/testAPI",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"api",
+										"testAPI"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 13 Apr 2022 05:09:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.51 (Win64) PHP/8.1.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Categories",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getCategories",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "keyword",
+								"value": "te",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/searchProducts?q=Sho",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"searchProducts"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Sho"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Detail",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/productDetail/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"productDetail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Product By Category",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app.technologyvalley.com.eg/api/getProductByCategory/14?page=1",
+							"protocol": "https",
+							"host": [
+								"app",
+								"technologyvalley",
+								"com",
+								"eg"
+							],
+							"path": [
+								"api",
+								"getProductByCategory",
+								"14"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Manufacturer",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getProductByManufacturer/1?page=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getProductByManufacturer",
+								"1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPages",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getPages/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getPages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Manufacturers",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getProductByManufacturer/1?page=1&filterPrice=899&filterPriceRange=84,899&filterRating=5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getProductByManufacturer",
+								"1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "filterPrice",
+									"value": "899"
+								},
+								{
+									"key": "filterPriceRange",
+									"value": "84,899"
+								},
+								{
+									"key": "filterRating",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cats new",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getCategories",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Products List",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getNewProducts",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getNewProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trending Products",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getTrendingProducts",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getTrendingProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DOD Products",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/getDODProducts",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"getDODProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Increment View",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{accessToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/incrementProductView/55",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"incrementProductView",
+								"55"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
